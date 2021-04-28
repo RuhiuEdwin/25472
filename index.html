@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="/assets/icons/06.png">
+    <title>Covid Edusite</title>
+    <!--libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <!--local stylesheet-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!--Landing page-->
+    <!--container-->
+    <div class="container">
+    <!--nav-->
+        <!--------Navigation------->
+        <nav class="nav">
+            <div class="nav-menu flex-row">
+                <div class="nav-brand">
+                    <a href="#"><img src="./assets/icons/06.png" alt=""></a>
+                </div>
+                <div class="toggle-collapse">
+                    <div class="toggle-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div>
+                    <ul class="nav-items">
+                        <li class="nav-link">
+                            <a href="#">What is covid 19?</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Symptoms?</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Prevention</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!--x-nav-x-->
+    <!--background video-->
+    <video autoplay muted loop class="video-bg">
+        <source src="./assets/gif/giphy.mp4" type="video/mp4">
+    </video>
+    <!--x-background video-x-->
+    <!--sidebar-->
+        <div class="sidebar">
+            <a href=""><i class="fas  fa-search"></i></a>
+            <div class="social-links">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href=""><i class="fas  fa-info-circle"></i></a>
+        </div>
+    <!--x-sidebar-x-->
+    <!--text-->
+        <div class="msg-container">
+        <!--text slider-->
+            <div id="slider">
+                <div class="msg-col">
+                    <h1>Covid 19 Edusite</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus consequuntur cum doloremque sed! Esse est unde commodi illum 
+                        ratione dolore quidem. 
+                        Quidem corporis vero esse ab quisquam aliquid tenetur illum.</p>
+                        <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>What Is Covid 19?</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus consequuntur cum doloremque sed! Esse est unde commodi illum 
+                        ratione dolore quidem. 
+                        Quidem corporis vero esse ab quisquam aliquid tenetur illum.</p>
+                        <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>What Are The Symptoms?</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus consequuntur cum doloremque sed! Esse est unde commodi illum 
+                        ratione dolore quidem. 
+                        Quidem corporis vero esse ab quisquam aliquid tenetur illum.</p>
+                        <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>What Is The Prevention?</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus consequuntur cum doloremque sed! Esse est unde commodi illum 
+                        ratione dolore quidem. 
+                        Quidem corporis vero esse ab quisquam aliquid tenetur illum.</p>
+                        <a href="">Learn More</a>
+                </div>
+            </div>
+        <!--x-text slider-x-->
+        </div>
+    <!--x-text-x-->
+    </div>
+    <!--x-conatiner-x-->
+    <!--control-->
+    <div class="controller">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+        <div id="line4"></div>
+        <div id="active"></div>
+    </div>
+    <!--x-control-x-->
+    <!--javascript-->
+    <script>
+        var slider= document.getElementById('slider');
+        var active= document.getElementById('active');
+        var line1= document.getElementById('line1');
+        var line2= document.getElementById('line2');
+        var line3= document.getElementById('line3');
+        var line4= document.getElementById('line4');
+
+        line1.onclick = function(){
+            slider.style.transform = 'translateX(0)';
+            active.style.top = '0px';
+        }
+        line2.onclick = function(){
+            slider.style.transform = 'translateX(-25%)';
+            active.style.top = '80px';
+        }
+        line3.onclick = function(){
+            slider.style.transform = 'translateX(-50%)';
+            active.style.top = '160px';
+        }
+        line4.onclick = function(){
+            slider.style.transform = 'translateX(-75%)';
+            active.style.top = '240px';
+        }
+
+    </script>
+    
+<script src="./assets/js/main.js"></script>
+    <!--x-javascript-x-->
+    <!--x-landing page-x-->
+</body>
+</html>
